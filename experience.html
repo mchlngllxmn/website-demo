@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work Experience · [Your Name]</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Main CSS (same as portfolio) -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Additional experience-specific styles -->
+  <style>
+    /* Experience page tweaks – keeps the same minimalist look */
+    .timeline {
+      max-width: 800px;
+      margin: 2rem auto 0;
+    }
+    .experience-item {
+      border-left: 2px solid var(--border-light);
+      padding: 0 0 2rem 2rem;
+      position: relative;
+      margin-bottom: 1rem;
+    }
+    .experience-item:last-child {
+      border-left-color: transparent;
+    }
+    .experience-item::before {
+      content: '';
+      position: absolute;
+      left: -8px;
+      top: 0;
+      width: 14px;
+      height: 14px;
+      background: var(--text-primary);
+      border-radius: 50%;
+      border: 2px solid white;
+      box-shadow: 0 0 0 2px var(--border-light);
+    }
+    .exp-title {
+      font-size: 1.4rem;
+      font-weight: 500;
+      margin-bottom: 0.25rem;
+    }
+    .exp-meta {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .exp-desc {
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+    .exp-desc ul {
+      margin-top: 0.5rem;
+      padding-left: 1.2rem;
+    }
+    .exp-desc li {
+      margin: 0.4rem 0;
+    }
+    .back-link {
+      margin-top: 3rem;
+      text-align: center;
+    }
+    @media (max-width: 780px) {
+      .experience-item {
+        padding-left: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container nav-bar">
+    <div class="logo">✦ / [Your Name]</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="experience.html">Work Experience</a> <!-- Add this line for Work Experience -->
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="hero" style="padding-bottom: 2rem;">
+    <div class="container">
+      <div class="hero-content" style="max-width: 800px;">
+        <h1>Work experience</h1>
+        <p>A timeline of roles, collaborations, and the lessons learned along the way.</p>
+      </div>
+    </div>
+  </div>
+
+  <section style="padding-top: 0;">
+    <div class="container">
+      <div class="timeline">
+        
+        <!-- Experience 1 -->
+        <div class="experience-item">
+          <div class="exp-title">Senior Product Designer</div>
+          <div class="exp-meta">
+            <span><i class="far fa-building"></i> Minimal Studio · 2022 – Present</span>
+            <span><i class="fas fa-map-marker-alt"></i> Remote / Berlin</span>
+          </div>
+          <div class="exp-desc">
+            Lead design for B2B analytics platform. Built design system from scratch, mentored two junior designers, and increased user engagement by 34% through interface simplifications.
+          </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="experience-item">
+          <div class="exp-title">Front-end Developer & UI Designer</div>
+          <div class="exp-meta">
+            <span><i class="far fa-building"></i> Orizon Digital · 2019 – 2022</span>
+            <span><i class="fas fa-map-marker-alt"></i> Brooklyn, NY</span>
+          </div>
+          <div class="exp-desc">
+            Developed responsive websites and component libraries for e‑commerce clients. Collaborated with creative directors to translate visual identities into accessible code.
+            <ul>
+              <li>Shipped 12+ client projects using Vue.js and Tailwind CSS</li>
+              <li>Reduced page load time by 40% through performance audits</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience 3 -->
+        <div class="experience-item">
+          <div class="exp-title">Freelance Designer & Developer</div>
+          <div class="exp-meta">
+            <span><i class="far fa-calendar-alt"></i> 2017 – 2019</span>
+            <span><i class="fas fa-globe"></i> Worldwide</span>
+          </div>
+          <div class="exp-desc">
+            Worked with startups and artists on branding, Webflow sites, and interactive prototypes. Built a reputation for minimalist, content‑first design.
+          </div>
+        </div>
+
+      </div>
+
+      <div class="back-link">
+        <a href="index.html" class="btn btn-outline"><i class="fas fa-arrow-left"></i> Back to portfolio</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>© 2025 — Minimalist portfolio. Built with <i class="fas fa-heart"></i> and HTML/CSS.</p>
+  </div>
+</footer>
+
+</body>
+</html>
